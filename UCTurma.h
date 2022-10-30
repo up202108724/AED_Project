@@ -6,18 +6,20 @@
 #define AED_PROJECT_UCTURMA_H
 
 #include <string>
+#include "Aula.h"
+
 using namespace std;
 class UCTurma {
-    public:
-           UCTurma(string uccode , string classcode){uccode_=uccode; classcode_= classcode;}
-           string getUC() const;
-           string getClassCode() const;
-           void <Slot>
-
-    private:
-            string uccode_;
-            string classcode_;
-
+public:
+    UCTurma(string uccode , string classcode);
+    string getUC() const;
+    string getClassCode() const;
+    void print() const;
+    void adicionarAula(const Aula &aula);
+private:
+    string uccode_;
+    string classcode_;
+    vector<Aula> horarioUCTurma;
 };
 
 

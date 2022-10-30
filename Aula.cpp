@@ -4,12 +4,17 @@
 
 #include "Aula.h"
 #include <string>
+#include <iostream>
 using namespace std;
-Aula::Aula(string classcode,string uccode,string dia, float inicio, float duracao, std::string tipo) {
+Aula::Aula(string dia, float inicio, float duracao, string tipo) {
     dia_=dia;
     inicio_=inicio;
     duracao_=duracao;
     tipo_=tipo;
-    classcode_=classcode;
-    uccode_=uccode;
+
+}
+
+void Aula::print() {
+    cout<< dia_ << ','<< duracao_<<',' <<tipo_;
+
 }

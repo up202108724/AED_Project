@@ -12,16 +12,17 @@ using namespace std;
 class Aula {
 
     public:
-        Aula(string classcode,string uccode,string dia, float inicio, float duracao, string tipo);
-
+        Aula(string dia, float inicio, float duracao, string tipo);
+        string getClasscode();
+        string getUCcode();
+        void print();
 
 private:
         string dia_;
         float inicio_;
         float duracao_;
         string tipo_;
-        string classcode_;
-        string uccode_;
+
 };
 
 
