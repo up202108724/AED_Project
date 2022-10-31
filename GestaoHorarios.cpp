@@ -117,19 +117,22 @@ void GestaoHorarios::readCodes() {
     int i=0;
     while (getline(in1, line)) {
         string Uccode;
-        istringstream iss(line);
-        while (iss.good()) {
-            string substr;
-            getline(iss, substr, ',');
-            if (i == 0) {
-                Uccode = substr;
+        Uccode = line.substr(0,line.find_first_of(",",0));
+        for (string c: codes){
+            if (Uccode==c){
+                break;
             }
-            i=0;
-            if( find(codes.begin(), codes.end(), Uccode) == codes.end() ){
+            if (c==codes.back()) {
                 codes.push_back(Uccode);
+                break;
             }
         }
-
+        if (codes.empty()){
+            codes.push_back(Uccode);
+        }
+        /*if( find(codes.begin(), codes.end(), Uccode) == codes.end() ){
+            codes.push_back(Uccode);
+        }*/
     }
 }
 vector<Estudante> GestaoHorarios::getEstudantes() const {

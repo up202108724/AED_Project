@@ -17,37 +17,39 @@ bool sortEstudantesNome(const Estudante &Estudante1, const Estudante &Estudante2
     return false;
 }
 void Option1(GestaoHorarios gestor, string code){
-    vector <Estudante> Estudantes;
+    vector <Estudante> StudentsUC;
     for (Estudante a: gestor.getEstudantes()){
         for (UCTurma turma: a.getturmasEstudante()){
             if (turma.getUC()==code){
-                Estudantes.push_back(a);
-            } else{ continue;}
+                StudentsUC.push_back(a);
+            }
         }
     }
-    sort(Estudantes.begin(),Estudantes.end(), sortEstudantesNome);
-    for (Estudante a: Estudantes){
+    sort(StudentsUC.begin(),StudentsUC.end(), sortEstudantesNome);
+    for (Estudante a: StudentsUC){
         cout << a.getCode() << ',' << a.getName() << endl;
     }
 
 }
 int main() {
     bool flag=true;
+    GestaoHorarios gestor = GestaoHorarios();
+    for (string c: gestor.getCodes()) {
+        cout << c << endl;
+    }        // test
     while(flag) {
-        GestaoHorarios gestor = GestaoHorarios();
-
-        int selection = 0;
         cout << "Gestor de Horários de Estudantes L.EIC" << endl;
         cout << "1 - Ver estudantes de uma cadeira" << endl;
         cout << "2 - Ver estudantes inscritos em n UCs" << endl;
         cout << "Selecione uma opção: ";
+        int selection = 0;
 
         cin >> selection;
         if (selection == 1) {
             string code;
             cout << "Insira o código da UC: ";
             cin >> code;
-            if(find(gestor.getCodes().begin(), gestor.getCodes().end(), code) == gestor.getCodes().end()&& ) {
+            if(find(gestor.getCodes().begin(), gestor.getCodes().end(), code) == gestor.getCodes().end()) {
                 cout << "Opção inválida!" << endl;
                 while (!(cin >> code) or find(gestor.getCodes().begin(), gestor.getCodes().end(), code) == gestor.getCodes().end()) {
                     cin.clear();
