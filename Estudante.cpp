@@ -20,9 +20,20 @@ string Estudante::getName() const {
 
 void Estudante::print() const {
     cout << studentcode_ << ',' << name_ << endl;
-    for (UCTurma turma : turmas) {
+    for (UCTurma turma : turmasEstudante) {
         cout << "  ";
         turma.print();
-
     }
+}
+
+bool Estudante::operator==(const Estudante &aluno) const{
+    if (studentcode_==aluno.getCode()) return true;
+    else return false;
+}
+
+void Estudante::adicionarTurma(const UCTurma &turma){
+    turmasEstudante.push_back(turma);
+}
+vector<UCTurma> Estudante::getturmasEstudante() {
+    return turmasEstudante;
 }

@@ -6,6 +6,7 @@
 #define AED_PROJECT_UCTURMA_H
 
 #include <string>
+#include <vector>
 #include "Aula.h"
 
 using namespace std;
@@ -15,11 +16,12 @@ public:
     string getUC() const;
     string getClassCode() const;
     void print() const;
-    void adicionarAula(const Aula &aula);
+    bool operator==(const UCTurma& turma);
+    void adicionarAula( const Aula& aula);
 private:
+    vector<Aula> horarioUCTurma;
     string uccode_;
     string classcode_;
-    vector<Aula> horarioUCTurma;
 };
 
 

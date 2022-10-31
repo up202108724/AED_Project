@@ -13,15 +13,15 @@ public:
     Estudante(int studentcode, string name);
     int getCode() const;
     string getName() const;
+    vector<UCTurma> getturmasEstudante();
+    void adicionarTurma(const UCTurma &turma);
     void print() const;
-
-
-
+    bool operator==(const Estudante &aluno) const;
 
 private:
     int studentcode_;
     string name_;
-    vector<UCTurma> turmas;
+    vector<UCTurma> turmasEstudante;
 
 };
 

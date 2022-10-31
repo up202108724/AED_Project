@@ -7,19 +7,26 @@
 #include "Estudante.h"
 #include "Aula.h"
 #include <vector>
+#include <set>
 #ifndef AED_PROJECT_GESTAOHORARIOS_H
 #define AED_PROJECT_GESTAOHORARIOS_H
 
 
 class GestaoHorarios {
 public:
+    GestaoHorarios();
     void readAulas();
-    void readTurmas();
+    void readEstudantes();
+    void readCodes();
+    vector<Estudante> getEstudantes() const;
+    vector<UCTurma> getUCTurmas() const;
+    vector<string> getCodes() const;
 
 
 private:
-    vector<Aula> aulas;
-    vector<UCTurma> turmas;
+    vector<Estudante> estudantes;
+    vector<UCTurma> horario;
+    vector<string> codes;
 };
 
 

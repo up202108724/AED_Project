@@ -3,24 +3,65 @@
 //
 
 #include "GestaoHorarios.h"
+#include<algorithm>
+GestaoHorarios::GestaoHorarios() {
+    readAulas();
+    readEstudantes();
+    readCodes();
+}
+
+void GestaoHorarios::readEstudantes(){
+    ifstream in("../Tests/students_classes.csv");
+    int i=0;
+    string line;
+    getline(in,line);
+    while (getline(in,line)){
+        string StudentCode,StudentName,UcCode,ClassCode;
+        istringstream iss(line);
+        while(iss.good()){
+            string substr;
+            getline(iss,substr, ',');
+            if (i==0){
+                StudentCode=substr;
+            }
+            if (i==1){
+                StudentName=substr;
+            }
+            if (i==2){
+                UcCode=substr;
+            }
+            if (i==3){
+                ClassCode=substr;
+            }
+            i++;
+        }
+        i=0;
+        int StudentCodeInt= stoi(StudentCode);
+        UCTurma turma= UCTurma(UcCode,ClassCode);
+        Estudante estudante= Estudante(StudentCodeInt, StudentName);
+        for (Estudante c : estudantes){
+            if (c==estudante){
+                c.adicionarTurma(turma);
+                break;
+            }
+            else if (c==estudantes.back()){
+                estudantes.push_back(estudante);
+                estudantes.back().adicionarTurma(turma);
+                break;
+            }
+        }
+        if (estudantes.empty()){
+            estudantes.push_back(estudante);          
+            estudantes.back().adicionarTurma(turma);
+        }
+    }
+}
 
 void GestaoHorarios::readAulas() {
     ifstream in1("../Tests/classes.csv");
-    ifstream in2("../Tests/classes_per_uc.csv");
-    ifstream in3("../Tests/students_classes.csv");
-
-    if(!in1.is_open()){
-        cout << "error_category";
-    }
-
-    vector<Estudante> students;
-
-    vector<Aula> aulas;
-
     string line;
     getline(in1, line);
     int i=0;
-
     while (getline(in1, line)) {
         string ClassCode, UcCode, Weekday, StartHour, Duration, Type;
         istringstream iss(line);
@@ -48,13 +89,56 @@ void GestaoHorarios::readAulas() {
             i++;
         }
         i=0;
-        cout<< ClassCode << UcCode << Weekday << StartHour << Duration<< Type;
         float start = stof(StartHour);
         float d = stof(Duration);
-        Aula aula= Aula( Weekday, start, d, Type);
-        UCTurma turma= UCTurma(UcCode,ClassCode);
+        Aula aula= Aula(Weekday, start, d, Type);
+        UCTurma turma = UCTurma(UcCode, ClassCode);
+        for (UCTurma c : horario){
+            if (c==turma){
+                c.adicionarAula(aula);
+                break;
+            }
+            else if (c==horario.back()){
+                horario.push_back(turma);
+                horario.back().adicionarAula(aula);
+                break;
+            }
+        }
+        if (horario.empty()){
+            horario.push_back(turma);
+            horario.back().adicionarAula(aula);
+        }
     }
-    cout << aulas.size();
+}
+void GestaoHorarios::readCodes() {
+    ifstream in1("../Tests/classes_per_uc.csv");
+    string line;
+    getline(in1, line);
+    int i=0;
+    while (getline(in1, line)) {
+        string Uccode;
+        istringstream iss(line);
+        while (iss.good()) {
+            string substr;
+            getline(iss, substr, ',');
+            if (i == 0) {
+                Uccode = substr;
+            }
+            i=0;
+            if( find(codes.begin(), codes.end(), Uccode) == codes.end() ){
+                codes.push_back(Uccode);
+            }
+        }
+
+    }
+}
+vector<Estudante> GestaoHorarios::getEstudantes() const {
+    return estudantes;
 }
 
-
+vector<UCTurma> GestaoHorarios::getUCTurmas() const {
+    return horario;
+}
+vector<string> GestaoHorarios::getCodes() const{
+    return codes;
+}

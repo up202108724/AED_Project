@@ -6,23 +6,20 @@
 #define AED_PROJECT_AULA_H
 
 #include <string>
-#include "UCTurma.h"
-
 using namespace std;
-class Aula {
 
-    public:
-        Aula(string dia, float inicio, float duracao, string tipo);
-        string getClasscode();
-        string getUCcode();
-        void print();
+class Aula{
+
+public:
+    Aula(string dia, float inicio, float duracao, string tipo);
+    void print();
 
 private:
-        string dia_;
-        float inicio_;
-        float duracao_;
-        string tipo_;
-
+    string dia_;
+    float inicio_;
+    float fim_;
+    float duracao_;
+    string tipo_;
 };
 
 
