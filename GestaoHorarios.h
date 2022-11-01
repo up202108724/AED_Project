@@ -18,15 +18,19 @@ public:
     void readAulas();
     void readEstudantes();
     void readCodes();
+    void readTurmas();
     vector<Estudante> getEstudantes() const;
     vector<UCTurma> getUCTurmas() const;
     vector<string> getCodes() const;
+
+    vector<string> getTurmas() const;
 
 
 private:
     vector<Estudante> estudantes;
     vector<UCTurma> horario;
     vector<string> codes;
+    vector<string> turmas;
 };
 
 

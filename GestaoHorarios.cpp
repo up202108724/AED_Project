@@ -145,3 +145,31 @@ vector<UCTurma> GestaoHorarios::getUCTurmas() const {
 vector<string> GestaoHorarios::getCodes() const{
     return codes;
 }
+
+vector<string> GestaoHorarios::getTurmas() const {
+    return turmas;
+}
+void GestaoHorarios::readTurmas() {
+    ifstream in1("../Tests/classes_per_uc.csv");
+    string line;
+    getline(in1, line);
+
+    while (getline(in1, line)) {
+        string turma;
+        turma = line.substr(line.find_first_of(",")+1,line.length()-1);
+        for (string t: turmas){
+            if (turma==t){
+                break;
+            }
+            if (t==turmas.back()) {
+                turmas.push_back(turma);
+                break;
+            }
+        }
+        if (turmas.empty()){
+            turmas.push_back(turma);
+        }
+
+    }
+
+}

@@ -31,6 +31,20 @@ void Option1(GestaoHorarios gestor, string code){
     }
 
 }
+void Option2(GestaoHorarios gestor, string turma){
+    vector <Estudante> StudentsUC;
+    for (Estudante a: gestor.getEstudantes()){
+        for (UCTurma turmas: a.getturmasEstudante()){
+            if (turmas.getClassCode()==turma){
+                StudentsUC.push_back(a);
+            }
+        }
+    }
+    sort(StudentsUC.begin(),StudentsUC.end(), sortEstudantesNome);
+    for (Estudante a: StudentsUC){
+        cout << a.getCode() << ',' << a.getName() << endl;
+    }
+}
 int main() {
     bool flag=true;
     GestaoHorarios gestor = GestaoHorarios();
@@ -49,18 +63,28 @@ int main() {
             string code;
             cout << "Insira o código da UC: ";
             cin >> code;
-            if(find(gestor.getCodes().begin(), gestor.getCodes().end(), code) == gestor.getCodes().end()) {
-                cout << "Opção inválida!" << endl;
-                while (!(cin >> code) or find(gestor.getCodes().begin(), gestor.getCodes().end(), code) == gestor.getCodes().end()) {
+
+            while (!(cin >> code) or find(gestor.getCodes().begin(), gestor.getCodes().end(), code) == gestor.getCodes().end()) {
+                    cout << "Opção inválida!" << endl;
                     cin.clear();
                     cin.ignore(numeric_limits<streamsize>::max(), '\n');
                     cout << endl << "Insira o código da UC: ";
                     cin >> code;
 
-                }
             }
+
             Option1(gestor, code);
 
+        }
+        if (selection == 2){
+            string turma;
+            cout << "Insira o nome da Turma: ";
+            cin >> turma;
+            if(find(gestor.getTurmas().begin(), gestor.getTurmas().end(), turma) == gestor.getCodes().end()){
+                cout << "Opção inválida!"<< endl;
+
+            }
+            Option2(gestor,turma);
         }
         if (selection=='q'){
             flag=false;
