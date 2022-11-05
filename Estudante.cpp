@@ -20,10 +20,7 @@ string Estudante::getName() const {
 
 void Estudante::print() const {
     cout << studentcode_ << ',' << name_ << endl;
-    for (UCTurma turma : turmasEstudante) {
-        cout << "  ";
-        turma.print();
-    }
+    for (UCTurma turma : turmasEstudante) turma.print();
 }
 
 bool Estudante::operator==(const Estudante &aluno) const{
@@ -31,9 +28,30 @@ bool Estudante::operator==(const Estudante &aluno) const{
     else return false;
 }
 
+bool Estudante::operator==(int x) const {
+    return studentcode_==x;
+}
+
+bool Estudante::operator<(const Estudante &aluno) const{
+    return name_<aluno.getName();
+}
+
 void Estudante::adicionarTurma(const UCTurma &turma){
     turmasEstudante.push_back(turma);
 }
 vector<UCTurma> Estudante::getturmasEstudante() {
     return turmasEstudante;
+}
+
+void Estudante::removerTurma(string uc){
+    removerUC(uc);
+    turmasEstudante.emplace_back(UCTurma(uc,"N/A"));
+}
+
+void Estudante::removerUC(string uc) {
+    auto itr = turmasEstudante.begin();
+    for (UCTurma t : turmasEstudante){
+        if (uc==t.getUC()) turmasEstudante.erase(itr);
+        itr++;
+    }
 }

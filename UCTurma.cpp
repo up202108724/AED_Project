@@ -19,7 +19,7 @@ string UCTurma::getClassCode() const{
     return classcode_;
 }
 void UCTurma::print() const {
-    cout << uccode_ << ',' << classcode_ << endl;
+    cout << "\t" << uccode_ << ',' << classcode_ << endl;
 }
 
 void UCTurma::adicionarAula(const Aula &aula) {
@@ -30,3 +30,8 @@ bool UCTurma::operator==(const UCTurma& turma) {
     if (uccode_==turma.getUC() && classcode_==turma.getClassCode()) return true;
     else return false;
 }
+
+vector<Aula> UCTurma::getHorarioUCTurma(){
+    return horarioUCTurma;
+}
+

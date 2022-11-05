@@ -55,12 +55,6 @@ build CMakeFiles/AED_Project.dir/main.cpp.o: CXX_COMPILER__AED_Project_Debug /ho
   OBJECT_DIR = CMakeFiles/AED_Project.dir
   OBJECT_FILE_DIR = CMakeFiles/AED_Project.dir
 
-build CMakeFiles/AED_Project.dir/Tests/firstdoc.cpp.o: CXX_COMPILER__AED_Project_Debug /home/andre/Desktop/AED_Project/Tests/firstdoc.cpp || cmake_object_order_depends_target_AED_Project
-  DEP_FILE = CMakeFiles/AED_Project.dir/Tests/firstdoc.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/AED_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles/AED_Project.dir/Tests
-
 build CMakeFiles/AED_Project.dir/GestaoHorarios.cpp.o: CXX_COMPILER__AED_Project_Debug /home/andre/Desktop/AED_Project/GestaoHorarios.cpp || cmake_object_order_depends_target_AED_Project
   DEP_FILE = CMakeFiles/AED_Project.dir/GestaoHorarios.cpp.o.d
   FLAGS = -g
@@ -85,6 +79,12 @@ build CMakeFiles/AED_Project.dir/UCTurma.cpp.o: CXX_COMPILER__AED_Project_Debug 
   OBJECT_DIR = CMakeFiles/AED_Project.dir
   OBJECT_FILE_DIR = CMakeFiles/AED_Project.dir
 
+build CMakeFiles/AED_Project.dir/Pedido.cpp.o: CXX_COMPILER__AED_Project_Debug /home/andre/Desktop/AED_Project/Pedido.cpp || cmake_object_order_depends_target_AED_Project
+  DEP_FILE = CMakeFiles/AED_Project.dir/Pedido.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/AED_Project.dir
+  OBJECT_FILE_DIR = CMakeFiles/AED_Project.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target AED_Project
@@ -93,7 +93,7 @@ build CMakeFiles/AED_Project.dir/UCTurma.cpp.o: CXX_COMPILER__AED_Project_Debug 
 #############################################
 # Link the executable AED_Project
 
-build AED_Project: CXX_EXECUTABLE_LINKER__AED_Project_Debug CMakeFiles/AED_Project.dir/main.cpp.o CMakeFiles/AED_Project.dir/Tests/firstdoc.cpp.o CMakeFiles/AED_Project.dir/GestaoHorarios.cpp.o CMakeFiles/AED_Project.dir/Estudante.cpp.o CMakeFiles/AED_Project.dir/Aula.cpp.o CMakeFiles/AED_Project.dir/UCTurma.cpp.o
+build AED_Project: CXX_EXECUTABLE_LINKER__AED_Project_Debug CMakeFiles/AED_Project.dir/main.cpp.o CMakeFiles/AED_Project.dir/GestaoHorarios.cpp.o CMakeFiles/AED_Project.dir/Estudante.cpp.o CMakeFiles/AED_Project.dir/Aula.cpp.o CMakeFiles/AED_Project.dir/UCTurma.cpp.o CMakeFiles/AED_Project.dir/Pedido.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/AED_Project.dir
   POST_BUILD = :
