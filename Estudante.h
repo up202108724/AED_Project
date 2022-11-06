@@ -89,8 +89,10 @@ public:
     void adicionarTurma(const UCTurma &turma);//! Complexidade O(1)
     /**
      * @brief devolve o número de cadeiras em que um estudante está inscrito
+     * @brief Complexidade O(1)
      * @return turmasEstudante.size()
      */
+
     int getnumUC_() const;
 private:
     int studentcode_; /*! Código de estudante do estudante */
