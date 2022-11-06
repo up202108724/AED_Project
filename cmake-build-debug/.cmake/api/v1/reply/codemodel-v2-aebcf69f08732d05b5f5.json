@@ -58,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/andre/Desktop/projetofinal/cmake-build-debug",
-		"source" : "/home/andre/Desktop/projetofinal"
+		"build" : "/home/andre/Desktop/AED_Project/cmake-build-debug",
+		"source" : "/home/andre/Desktop/AED_Project"
 	},
 	"version" : 
 	{
