@@ -16,7 +16,7 @@
 #include "Aula.h"
 #include "Pedido.h"
 #ifndef AED_PROJECT_GESTAOHORARIOS_H
-        #define AED_PROJECT_GESTAOHORARIOS_H
+#define AED_PROJECT_GESTAOHORARIOS_H
 
 
 class GestaoHorarios {
@@ -34,6 +34,11 @@ public:
     /**
     * @brief A partir de um ficheiro escolhido( students_classes.csv), armazena todas os estudantes inscritos no curso de L.EIC, e armazena em cada estudante todas as turmas em que está inscrito.
     * @brief Complexidade-O (2n²)
+    */
+    void readEstudantes();
+    /**
+    * @brief Abre e imprime num ficheiro a lista de todos os pedidos mal-sucedidos, após estes tiverem sido processados
+    * @brief Complexidade- O(n)
     */
     void outputFails()const;
     /**
@@ -83,6 +88,37 @@ public:
     * @brief Complexidade- O(n)
     */
     void outputSucessos() const;
+
+    /**
+    * @brief A partir de um ficheiro escolhido( students_classes.csv), armazena todas os códigos de todas as cadeiras existentes no curso de L.EIC
+    * Complexidade- O(n²)
+    */
+    void readCodes();
+    /**
+    * @brief A partir de um ficheiro escolhido( students_classes.csv), armazena todas os códigos de todas as turmas existentes no curso de L.EIC.
+    *  Complexidade- O(n²)
+    */
+    void readTurmas();
+
+    /**
+    * @brief Adiciona um pedido x feito por um estudante
+    * @brief Complexidade- O(1)
+    * @param x
+    */
+    void addPedido(const Pedido& x);
+    /**
+    * @brief Processa sucessivamente todos os pedidos feitos até esta chamada, separando em vetores os pedidos que tiveram sucesso, e os que falharam
+    * @brief Complexidade- O(n²)
+    * @param x
+    */
+    void processarPedido();
+    /**
+     * @brief Replica uma listagem de todos os estudantes, com todas as suas turmas correspondentes
+     * @brief Complexidade- O(1)
+     */
+    void output() const;
+
+
 private:
     vector<Estudante> estudantes;/*! Conjunto de estudantes */
     vector<UCTurma> horario;/*! Conjunto de disciplinas e turmas */
@@ -95,4 +131,3 @@ private:
 
 
 #endif //AED_PROJECT_GESTAOHORARIOS_H
-       
