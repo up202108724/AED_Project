@@ -1,0 +1,227 @@
+\hypertarget{class_gestao_horarios}{}\doxysection{Gestao\+Horarios Class Reference}
+\label{class_gestao_horarios}\index{GestaoHorarios@{GestaoHorarios}}
+
+
+Class que exprime os métodos necessários para encontrar e gerir horários.  
+
+
+
+
+{\ttfamily \#include $<$Gestao\+Horarios.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gestao_horarios_a1c57542281c2de2becb4d08a05b43b07}\label{class_gestao_horarios_a1c57542281c2de2becb4d08a05b43b07}} 
+{\bfseries Gestao\+Horarios} ()
+\begin{DoxyCompactList}\small\item\em Um construtor default que invoca todos os métodos do tipo Read quando chamado Complexidade-\/O (6n²) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gestao_horarios_a6a5b1d226af8e1a5ee64e3f43cb46e6d}\label{class_gestao_horarios_a6a5b1d226af8e1a5ee64e3f43cb46e6d}} 
+void {\bfseries read\+Aulas} ()
+\begin{DoxyCompactList}\small\item\em A partir de um ficheiro escolhido( Classes.\+csv), armazena todas as aulas possíveis no curso de L.\+EIC, bem como organiza as suas caractísticas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestao_horarios_aa26023d170c6440352d6b6b2fcd7ee04}{read\+Estudantes}} ()
+\begin{DoxyCompactList}\small\item\em Complexidade-\/O (2n²) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestao_horarios_a5c6c27f7d5d90f3e7680c916534c0729}{read\+Codes}} ()
+\begin{DoxyCompactList}\small\item\em Complexidade-\/O (2n²) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestao_horarios_a94788bf5d1486d251de2432e1c4996e4}{read\+Turmas}} ()
+\begin{DoxyCompactList}\small\item\em A partir de um ficheiro escolhido( students\+\_\+classes.\+csv), armazena todas os códigos de todas as turmas existentes no curso de L.\+EIC. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestao_horarios_a08b6d9d2683f9f874564f05c83f35695}{add\+Pedido}} (const \mbox{\hyperlink{class_pedido}{Pedido}} \&x)
+\begin{DoxyCompactList}\small\item\em Adiciona um pedido x feito por um estudante. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestao_horarios_af6a772473bdfc7b6519e8cad5d3be286}{processar\+Pedido}} ()
+\begin{DoxyCompactList}\small\item\em Complexidade-\/ O(1) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gestao_horarios_a62dad09629dba95d6aac1c610afac62f}\label{class_gestao_horarios_a62dad09629dba95d6aac1c610afac62f}} 
+void {\bfseries output} () const
+\begin{DoxyCompactList}\small\item\em Replica uma listagem de todos os estudantes, com todas as suas turmas correspondentes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_gestao_horarios_ad746f464e079a52c4eee69a8236c04b5}{output\+Fails}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade-\/ O(1) /. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_estudante}{Estudante}} $>$ \mbox{\hyperlink{class_gestao_horarios_a40e7df0194b88ce2db41aabc4d7755e8}{get\+Estudantes}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade-\/ O(1) /. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_u_c_turma}{UCTurma}} $>$ \mbox{\hyperlink{class_gestao_horarios_a364a4e200731ed494a67d36164087293}{get\+UCTurmas}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade -\/ O(1) /. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_gestao_horarios_a4ee99b9f90aca079cdf1a612bd2f68b2}{get\+Codes}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade -\/ O(1) /. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \mbox{\hyperlink{class_gestao_horarios_ae546054f9e819cfa816f3a4134a59e5f}{get\+Turmas}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade -\/ O(1) \end{DoxyCompactList}\item 
+queue$<$ \mbox{\hyperlink{class_pedido}{Pedido}} $>$ \mbox{\hyperlink{class_gestao_horarios_a02dd39b503eddae182af17495bd89205}{get\+Pedidos}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade -\/ O(1) /. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_pedido}{Pedido}} $>$ \mbox{\hyperlink{class_gestao_horarios_a6f6658c0696bc9f9e1310835b8e9a8b2}{get\+Successos}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade -\/ O(1) /. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_pedido}{Pedido}} $>$ \mbox{\hyperlink{class_gestao_horarios_a232f7c3b0514645932b2a835c4ca3d2e}{get\+Fails}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade -\/ O(1) /. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_gestao_horarios_a3dc47fe7054d1365e994d94031f4d884}\label{class_gestao_horarios_a3dc47fe7054d1365e994d94031f4d884}} 
+void {\bfseries output\+Sucessos} () const
+\begin{DoxyCompactList}\small\item\em Complexidade -\/ O(1) /. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class que exprime os métodos necessários para encontrar e gerir horários. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gestao_horarios_a08b6d9d2683f9f874564f05c83f35695}\label{class_gestao_horarios_a08b6d9d2683f9f874564f05c83f35695}} 
+\index{GestaoHorarios@{GestaoHorarios}!addPedido@{addPedido}}
+\index{addPedido@{addPedido}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{addPedido()}{addPedido()}}
+{\footnotesize\ttfamily void Gestao\+Horarios\+::add\+Pedido (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_pedido}{Pedido}} \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Adiciona um pedido x feito por um estudante. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gestao_horarios_a4ee99b9f90aca079cdf1a612bd2f68b2}\label{class_gestao_horarios_a4ee99b9f90aca079cdf1a612bd2f68b2}} 
+\index{GestaoHorarios@{GestaoHorarios}!getCodes@{getCodes}}
+\index{getCodes@{getCodes}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{getCodes()}{getCodes()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Gestao\+Horarios\+::get\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade -\/ O(1) /. 
+
+Obtêm a lista dos códigos de todas as cadeiras do curso \begin{DoxyReturn}{Returns}
+codes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gestao_horarios_a40e7df0194b88ce2db41aabc4d7755e8}\label{class_gestao_horarios_a40e7df0194b88ce2db41aabc4d7755e8}} 
+\index{GestaoHorarios@{GestaoHorarios}!getEstudantes@{getEstudantes}}
+\index{getEstudantes@{getEstudantes}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{getEstudantes()}{getEstudantes()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_estudante}{Estudante}} $>$ Gestao\+Horarios\+::get\+Estudantes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade-\/ O(1) /. 
+
+Obtêm a lista de todos os estudantes inscritos no curso de L.\+EIC \begin{DoxyReturn}{Returns}
+estudantes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gestao_horarios_a232f7c3b0514645932b2a835c4ca3d2e}\label{class_gestao_horarios_a232f7c3b0514645932b2a835c4ca3d2e}} 
+\index{GestaoHorarios@{GestaoHorarios}!getFails@{getFails}}
+\index{getFails@{getFails}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{getFails()}{getFails()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_pedido}{Pedido}} $>$ Gestao\+Horarios\+::get\+Fails (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Complexidade -\/ O(1) /. 
+
+De todos os pedidos realizados por estudantes do curso de L.\+EIC, obtêm o conjunto de todos os que falharam \begin{DoxyReturn}{Returns}
+fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gestao_horarios_a02dd39b503eddae182af17495bd89205}\label{class_gestao_horarios_a02dd39b503eddae182af17495bd89205}} 
+\index{GestaoHorarios@{GestaoHorarios}!getPedidos@{getPedidos}}
+\index{getPedidos@{getPedidos}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{getPedidos()}{getPedidos()}}
+{\footnotesize\ttfamily queue$<$ \mbox{\hyperlink{class_pedido}{Pedido}} $>$ Gestao\+Horarios\+::get\+Pedidos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade -\/ O(1) /. 
+
+Obtêm a fila de todos os pedidos feitos por estudantes do curso de L.\+EIC \begin{DoxyReturn}{Returns}
+pedidos 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gestao_horarios_a6f6658c0696bc9f9e1310835b8e9a8b2}\label{class_gestao_horarios_a6f6658c0696bc9f9e1310835b8e9a8b2}} 
+\index{GestaoHorarios@{GestaoHorarios}!getSuccessos@{getSuccessos}}
+\index{getSuccessos@{getSuccessos}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{getSuccessos()}{getSuccessos()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_pedido}{Pedido}} $>$ Gestao\+Horarios\+::get\+Successos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Complexidade -\/ O(1) /. 
+
+De todos os pedidos realizados por estudantes do curso de L.\+EIC, obtêm o conjunto de todos os qeu foram concedidos \begin{DoxyReturn}{Returns}
+sucesso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gestao_horarios_ae546054f9e819cfa816f3a4134a59e5f}\label{class_gestao_horarios_ae546054f9e819cfa816f3a4134a59e5f}} 
+\index{GestaoHorarios@{GestaoHorarios}!getTurmas@{getTurmas}}
+\index{getTurmas@{getTurmas}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{getTurmas()}{getTurmas()}}
+{\footnotesize\ttfamily vector$<$ string $>$ Gestao\+Horarios\+::get\+Turmas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade -\/ O(1) 
+
+Obtêm a lista de todas as turmas existentes do curso de L.\+EIC \begin{DoxyReturn}{Returns}
+turmas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gestao_horarios_a364a4e200731ed494a67d36164087293}\label{class_gestao_horarios_a364a4e200731ed494a67d36164087293}} 
+\index{GestaoHorarios@{GestaoHorarios}!getUCTurmas@{getUCTurmas}}
+\index{getUCTurmas@{getUCTurmas}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{getUCTurmas()}{getUCTurmas()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_u_c_turma}{UCTurma}} $>$ Gestao\+Horarios\+::get\+UCTurmas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade -\/ O(1) /. 
+
+Obtêm a lista de todas as Turmas e cadeiras respetivas no curso \begin{DoxyReturn}{Returns}
+horario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_gestao_horarios_ad746f464e079a52c4eee69a8236c04b5}\label{class_gestao_horarios_ad746f464e079a52c4eee69a8236c04b5}} 
+\index{GestaoHorarios@{GestaoHorarios}!outputFails@{outputFails}}
+\index{outputFails@{outputFails}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{outputFails()}{outputFails()}}
+{\footnotesize\ttfamily void Gestao\+Horarios\+::output\+Fails (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade-\/ O(1) /. 
+
+Escreve num ficheiro a descrição de cada pedido feito por estudantes que tenha falhado, identificado o estudante respetivo. \mbox{\Hypertarget{class_gestao_horarios_af6a772473bdfc7b6519e8cad5d3be286}\label{class_gestao_horarios_af6a772473bdfc7b6519e8cad5d3be286}} 
+\index{GestaoHorarios@{GestaoHorarios}!processarPedido@{processarPedido}}
+\index{processarPedido@{processarPedido}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{processarPedido()}{processarPedido()}}
+{\footnotesize\ttfamily void Gestao\+Horarios\+::processar\+Pedido (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Complexidade-\/ O(1) 
+
+Processa sucessivamente todos os pedidos feitos até esta chamada, separando em vetores os pedidos que tiveram sucesso, e os que falharam 
+\begin{DoxyParams}{Parameters}
+{\em x} & Complexidade-\/ O(n²) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gestao_horarios_a5c6c27f7d5d90f3e7680c916534c0729}\label{class_gestao_horarios_a5c6c27f7d5d90f3e7680c916534c0729}} 
+\index{GestaoHorarios@{GestaoHorarios}!readCodes@{readCodes}}
+\index{readCodes@{readCodes}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{readCodes()}{readCodes()}}
+{\footnotesize\ttfamily void Gestao\+Horarios\+::read\+Codes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Complexidade-\/O (2n²) 
+
+Complexidade-\/ O(n²)
+
+A partir de um ficheiro escolhido( students\+\_\+classes.\+csv), armazena todas os códigos de todas as cadeiras existentes no curso de L.\+EIC \mbox{\Hypertarget{class_gestao_horarios_aa26023d170c6440352d6b6b2fcd7ee04}\label{class_gestao_horarios_aa26023d170c6440352d6b6b2fcd7ee04}} 
+\index{GestaoHorarios@{GestaoHorarios}!readEstudantes@{readEstudantes}}
+\index{readEstudantes@{readEstudantes}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{readEstudantes()}{readEstudantes()}}
+{\footnotesize\ttfamily void Gestao\+Horarios\+::read\+Estudantes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Complexidade-\/O (2n²) 
+
+A partir de um ficheiro escolhido( students\+\_\+classes.\+csv), armazena todas os estudantes inscritos no curso de L.\+EIC, e armazena em cada estudante todas as turmas em que está inscrito \mbox{\Hypertarget{class_gestao_horarios_a94788bf5d1486d251de2432e1c4996e4}\label{class_gestao_horarios_a94788bf5d1486d251de2432e1c4996e4}} 
+\index{GestaoHorarios@{GestaoHorarios}!readTurmas@{readTurmas}}
+\index{readTurmas@{readTurmas}!GestaoHorarios@{GestaoHorarios}}
+\doxysubsubsection{\texorpdfstring{readTurmas()}{readTurmas()}}
+{\footnotesize\ttfamily void Gestao\+Horarios\+::read\+Turmas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A partir de um ficheiro escolhido( students\+\_\+classes.\+csv), armazena todas os códigos de todas as turmas existentes no curso de L.\+EIC. 
+
+Complexidade-\/ O(n²) 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Gestao\+Horarios.\+h\item 
+Gestao\+Horarios.\+cpp\end{DoxyCompactItemize}

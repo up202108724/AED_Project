@@ -1,0 +1,204 @@
+\hypertarget{class_estudante}{}\doxysection{Estudante Class Reference}
+\label{class_estudante}\index{Estudante@{Estudante}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_estudante_a562d83a3f2f40776bf4dced3b2c97832}{Estudante}} (int studentcode, const string \&name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_estudante_a2d65f92ad96060d1830eb648729cfa78}{get\+Code}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_estudante_abcb532a93f8c543018f7b4dc062f9f80}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_u_c_turma}{UCTurma}} $>$ \mbox{\hyperlink{class_estudante_acda83f5acde32caec9ea1e72fd2ea4c9}{getturmas\+Estudante}} ()
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_estudante_af44fb9ec550e11453e3288fc4eee20c8}{print}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_estudante_aebd251f276537a46e09fffe86198f7e2}{operator==}} (const \mbox{\hyperlink{class_estudante}{Estudante}} \&aluno) const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_estudante_af32fdd56cd4bb66afa54068931737959}{operator==}} (int x) const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_estudante_a11fefda0b3aef9033af3058b6bf89f4a}{operator$<$}} (const \mbox{\hyperlink{class_estudante}{Estudante}} \&aluno) const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_estudante_a67382012778ce302e9f52a4a3e0c1796}{remover\+Turma}} (const string \&uc)
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_estudante_af3d2c234ce8c7ebf0cc4e1ba0aaf3fbd}{remover\+UC}} (const string \&uc)
+\begin{DoxyCompactList}\small\item\em Complexidade O(n) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_estudante_ac1b0ede3bccc76fd77cced949d589d22}{adicionar\+Turma}} (const \mbox{\hyperlink{class_u_c_turma}{UCTurma}} \&turma)
+\begin{DoxyCompactList}\small\item\em Complexidade O(n) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_estudante_a562d83a3f2f40776bf4dced3b2c97832}\label{class_estudante_a562d83a3f2f40776bf4dced3b2c97832}} 
+\index{Estudante@{Estudante}!Estudante@{Estudante}}
+\index{Estudante@{Estudante}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{Estudante()}{Estudante()}}
+{\footnotesize\ttfamily Estudante\+::\+Estudante (\begin{DoxyParamCaption}\item[{int}]{studentcode,  }\item[{const string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Cria um estudante, definido pelo seu nome e código de estudante 
+\begin{DoxyParams}{Parameters}
+{\em studentcode} & \\
+\hline
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_estudante_ac1b0ede3bccc76fd77cced949d589d22}\label{class_estudante_ac1b0ede3bccc76fd77cced949d589d22}} 
+\index{Estudante@{Estudante}!adicionarTurma@{adicionarTurma}}
+\index{adicionarTurma@{adicionarTurma}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{adicionarTurma()}{adicionarTurma()}}
+{\footnotesize\ttfamily void Estudante\+::adicionar\+Turma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_c_turma}{UCTurma}} \&}]{turma }\end{DoxyParamCaption})}
+
+
+
+Complexidade O(n) 
+
+adiciona um aluno a uma turma , e à sua disciplina correspondente. 
+\begin{DoxyParams}{Parameters}
+{\em turma} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_estudante_a2d65f92ad96060d1830eb648729cfa78}\label{class_estudante_a2d65f92ad96060d1830eb648729cfa78}} 
+\index{Estudante@{Estudante}!getCode@{getCode}}
+\index{getCode@{getCode}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{getCode()}{getCode()}}
+{\footnotesize\ttfamily int Estudante\+::get\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+obtẽm o código do estudante \begin{DoxyReturn}{Returns}
+studentcode 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_estudante_abcb532a93f8c543018f7b4dc062f9f80}\label{class_estudante_abcb532a93f8c543018f7b4dc062f9f80}} 
+\index{Estudante@{Estudante}!getName@{getName}}
+\index{getName@{getName}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Estudante\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+obtẽm o nome do estudante \begin{DoxyReturn}{Returns}
+name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_estudante_acda83f5acde32caec9ea1e72fd2ea4c9}\label{class_estudante_acda83f5acde32caec9ea1e72fd2ea4c9}} 
+\index{Estudante@{Estudante}!getturmasEstudante@{getturmasEstudante}}
+\index{getturmasEstudante@{getturmasEstudante}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{getturmasEstudante()}{getturmasEstudante()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_u_c_turma}{UCTurma}} $>$ Estudante\+::getturmas\+Estudante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Complexidade O(1) 
+
+devolve o conjunto de turmas e disciplinas respetivas (UCTURMAS) em que o estudante está inscrito \begin{DoxyReturn}{Returns}
+turmas\+Estudante 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_estudante_a11fefda0b3aef9033af3058b6bf89f4a}\label{class_estudante_a11fefda0b3aef9033af3058b6bf89f4a}} 
+\index{Estudante@{Estudante}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Estudante\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estudante}{Estudante}} \&}]{aluno }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+relaciona os estudantes pela comparação entre os seus códigos de estudante ( códigos de estudante inferiores definem posições anteriores em vetores de estudante ordenados) 
+\begin{DoxyParams}{Parameters}
+{\em aluno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+studentcode.\+get\+Code()==x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_estudante_aebd251f276537a46e09fffe86198f7e2}\label{class_estudante_aebd251f276537a46e09fffe86198f7e2}} 
+\index{Estudante@{Estudante}!operator==@{operator==}}
+\index{operator==@{operator==}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Estudante\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_estudante}{Estudante}} \&}]{aluno }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+define a igualdade de estudantes pela comparação entre os seus códigos de estudante 
+\begin{DoxyParams}{Parameters}
+{\em aluno} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+studentcode==aluno.\+get\+Code() 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_estudante_af32fdd56cd4bb66afa54068931737959}\label{class_estudante_af32fdd56cd4bb66afa54068931737959}} 
+\index{Estudante@{Estudante}!operator==@{operator==}}
+\index{operator==@{operator==}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Estudante\+::operator== (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+recebe como parâmetro um inteiro, e compara este com o código de estudante do objeto 
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+studentcode==x 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_estudante_af44fb9ec550e11453e3288fc4eee20c8}\label{class_estudante_af44fb9ec550e11453e3288fc4eee20c8}} 
+\index{Estudante@{Estudante}!print@{print}}
+\index{print@{print}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Estudante\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+imprime sequencialmente o código e nome do estudante, bem como cada turma e disciplina correspondente a que o estudante está inscrito \mbox{\Hypertarget{class_estudante_a67382012778ce302e9f52a4a3e0c1796}\label{class_estudante_a67382012778ce302e9f52a4a3e0c1796}} 
+\index{Estudante@{Estudante}!removerTurma@{removerTurma}}
+\index{removerTurma@{removerTurma}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{removerTurma()}{removerTurma()}}
+{\footnotesize\ttfamily void Estudante\+::remover\+Turma (\begin{DoxyParamCaption}\item[{const string \&}]{uc }\end{DoxyParamCaption})}
+
+
+
+Complexidade O(1) 
+
+recebe um código de uma disciplina e remova o estudante da turma correspondente a essa disciplina 
+\begin{DoxyParams}{Parameters}
+{\em uc} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_estudante_af3d2c234ce8c7ebf0cc4e1ba0aaf3fbd}\label{class_estudante_af3d2c234ce8c7ebf0cc4e1ba0aaf3fbd}} 
+\index{Estudante@{Estudante}!removerUC@{removerUC}}
+\index{removerUC@{removerUC}!Estudante@{Estudante}}
+\doxysubsubsection{\texorpdfstring{removerUC()}{removerUC()}}
+{\footnotesize\ttfamily void Estudante\+::remover\+UC (\begin{DoxyParamCaption}\item[{const string \&}]{uc }\end{DoxyParamCaption})}
+
+
+
+Complexidade O(n) 
+
+recebe um código de uma disciplina e remova o estudante da disiciplina correspondente ao código recebido 
+\begin{DoxyParams}{Parameters}
+{\em uc} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Estudante.\+h\item 
+Estudante.\+cpp\end{DoxyCompactItemize}

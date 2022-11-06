@@ -1,0 +1,168 @@
+\hypertarget{class_aula}{}\doxysection{Aula Class Reference}
+\label{class_aula}\index{Aula@{Aula}}
+
+
+Uma Classe \mbox{\hyperlink{class_aula}{Aula}}.  
+
+
+
+
+{\ttfamily \#include $<$Aula.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aula_ad0be365b6ff21611f943de21be6538e5}{Aula}} (const string \&uccode, const string \&classcode, const string \&dia, float inicio, float duracao, const string \&tipo)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_aula_a46290f0b411ab7e780b49767b613424a}{get\+Day}} () const
+\begin{DoxyCompactList}\small\item\em Obtêm o dia em que a aula tem lugar. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_aula_a548ffc733f370e7cda701ae88e774e24}{get\+Inicio}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_aula_a4bb961d89b73b11ffc8bd207219bc8bb}{get\+Fim}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_aula_af6ebc4f922edb4f28e240cfa3e9eb380}{get\+Tipo}} () const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_aula_ac13d16a560cd7862491c5c28cc5a8c15}{operator$<$}} (const \mbox{\hyperlink{class_aula}{Aula}} \&aula2) const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_aula_a517712a86566631e56a8f945badc3f6f}{print}} ()
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_aula_a199a253f69f3f62382e51e2e2551ac61}{is\+Possible}} (const \mbox{\hyperlink{class_aula}{Aula}} \&Aula2) const
+\begin{DoxyCompactList}\small\item\em Complexidade O(1) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Uma Classe \mbox{\hyperlink{class_aula}{Aula}}. 
+
+Class \mbox{\hyperlink{class_aula}{Aula}} para manipulação de aulas 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_aula_ad0be365b6ff21611f943de21be6538e5}\label{class_aula_ad0be365b6ff21611f943de21be6538e5}} 
+\index{Aula@{Aula}!Aula@{Aula}}
+\index{Aula@{Aula}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{Aula()}{Aula()}}
+{\footnotesize\ttfamily Aula\+::\+Aula (\begin{DoxyParamCaption}\item[{const string \&}]{uccode,  }\item[{const string \&}]{classcode,  }\item[{const string \&}]{dia,  }\item[{float}]{inicio,  }\item[{float}]{duracao,  }\item[{const string \&}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Create uma aula com diversas características. 
+\begin{DoxyParams}{Parameters}
+{\em uccode} & \\
+\hline
+{\em classcode} & \\
+\hline
+{\em dia} & \\
+\hline
+{\em inicio} & \\
+\hline
+{\em duracao} & \\
+\hline
+{\em tipo} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_aula_a46290f0b411ab7e780b49767b613424a}\label{class_aula_a46290f0b411ab7e780b49767b613424a}} 
+\index{Aula@{Aula}!getDay@{getDay}}
+\index{getDay@{getDay}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{getDay()}{getDay()}}
+{\footnotesize\ttfamily string Aula\+::get\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtêm o dia em que a aula tem lugar. 
+
+\begin{DoxyReturn}{Returns}
+dia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aula_a4bb961d89b73b11ffc8bd207219bc8bb}\label{class_aula_a4bb961d89b73b11ffc8bd207219bc8bb}} 
+\index{Aula@{Aula}!getFim@{getFim}}
+\index{getFim@{getFim}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{getFim()}{getFim()}}
+{\footnotesize\ttfamily float Aula\+::get\+Fim (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+Obtêm a hora de fim da aula \begin{DoxyReturn}{Returns}
+A hora de fim da aula 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aula_a548ffc733f370e7cda701ae88e774e24}\label{class_aula_a548ffc733f370e7cda701ae88e774e24}} 
+\index{Aula@{Aula}!getInicio@{getInicio}}
+\index{getInicio@{getInicio}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{getInicio()}{getInicio()}}
+{\footnotesize\ttfamily float Aula\+::get\+Inicio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+Obtêm a hora de início da aula \begin{DoxyReturn}{Returns}
+A hora de ínício da aula 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aula_af6ebc4f922edb4f28e240cfa3e9eb380}\label{class_aula_af6ebc4f922edb4f28e240cfa3e9eb380}} 
+\index{Aula@{Aula}!getTipo@{getTipo}}
+\index{getTipo@{getTipo}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{getTipo()}{getTipo()}}
+{\footnotesize\ttfamily string Aula\+::get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+Devolve o tipo da aula \begin{DoxyReturn}{Returns}
+tipo 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aula_a199a253f69f3f62382e51e2e2551ac61}\label{class_aula_a199a253f69f3f62382e51e2e2551ac61}} 
+\index{Aula@{Aula}!isPossible@{isPossible}}
+\index{isPossible@{isPossible}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{isPossible()}{isPossible()}}
+{\footnotesize\ttfamily bool Aula\+::is\+Possible (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_aula}{Aula}} \&}]{Aula2 }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+Verifica se é possivel a aula2 ser sobreposta à aula a ser comparada \begin{DoxyReturn}{Returns}
+Verdadeiro se for possível a sobreposição de aula2, o contrário é falso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aula_ac13d16a560cd7862491c5c28cc5a8c15}\label{class_aula_ac13d16a560cd7862491c5c28cc5a8c15}} 
+\index{Aula@{Aula}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Aula\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_aula}{Aula}} \&}]{aula2 }\end{DoxyParamCaption}) const}
+
+
+
+Complexidade O(1) 
+
+Redefine o operador \textquotesingle{}\texorpdfstring{$<$}{<}\textquotesingle{} a fim de comparar aulas 
+\begin{DoxyParams}{Parameters}
+{\em aula2} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Verdadeiro se \mbox{\hyperlink{class_aula}{Aula}} 2 começar mais tarde, o contrário é falso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aula_a517712a86566631e56a8f945badc3f6f}\label{class_aula_a517712a86566631e56a8f945badc3f6f}} 
+\index{Aula@{Aula}!print@{print}}
+\index{print@{print}!Aula@{Aula}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Aula\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Complexidade O(1) 
+
+Imprime todas as caractéristicas da aula de forma sequencial \begin{DoxyReturn}{Returns}
+Verdadeiro se \mbox{\hyperlink{class_aula}{Aula}} 2 começar mais tarde, o contrário é falso 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Aula.\+h\item 
+Aula.\+cpp\end{DoxyCompactItemize}

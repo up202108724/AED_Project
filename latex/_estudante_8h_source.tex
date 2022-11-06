@@ -1,0 +1,37 @@
+\hypertarget{_estudante_8h_source}{}\doxysection{Estudante.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by andre on 19-\/10-\/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#ifndef AED\_PROJECT\_ESTUDANTE\_H}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#define AED\_PROJECT\_ESTUDANTE\_H}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}UCTurma.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_estudante}{Estudante}} \{}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_estudante}{Estudante}}(\textcolor{keywordtype}{int} studentcode, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& name);}
+\DoxyCodeLine{25     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_estudante_a2d65f92ad96060d1830eb648729cfa78}{getCode}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{30     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_estudante_abcb532a93f8c543018f7b4dc062f9f80}{getName}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{36     vector<UCTurma> \mbox{\hyperlink{class_estudante_acda83f5acde32caec9ea1e72fd2ea4c9}{getturmasEstudante}}();}
+\DoxyCodeLine{40     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_estudante_af44fb9ec550e11453e3288fc4eee20c8}{print}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{46     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_estudante_aebd251f276537a46e09fffe86198f7e2}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_estudante}{Estudante}} \&aluno) \textcolor{keyword}{const};}
+\DoxyCodeLine{52     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_estudante_aebd251f276537a46e09fffe86198f7e2}{operator==}}(\textcolor{keywordtype}{int} x) \textcolor{keyword}{const};}
+\DoxyCodeLine{58     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_estudante_a11fefda0b3aef9033af3058b6bf89f4a}{operator<}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_estudante}{Estudante}}\& aluno) \textcolor{keyword}{const};}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_estudante_a67382012778ce302e9f52a4a3e0c1796}{removerTurma}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& uc);}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_estudante_af3d2c234ce8c7ebf0cc4e1ba0aaf3fbd}{removerUC}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& uc);}
+\DoxyCodeLine{74     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_estudante_ac1b0ede3bccc76fd77cced949d589d22}{adicionarTurma}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_u_c_turma}{UCTurma}} \&turma);}
+\DoxyCodeLine{75 \textcolor{keyword}{private}:}
+\DoxyCodeLine{76     \textcolor{keywordtype}{int} studentcode\_; }
+\DoxyCodeLine{77     \textcolor{keywordtype}{string} name\_; }
+\DoxyCodeLine{78     vector<UCTurma> turmasEstudante;}
+\DoxyCodeLine{80 \};}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_PROJECT\_ESTUDANTE\_H}}
+
+\end{DoxyCode}

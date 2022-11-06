@@ -8,9 +8,7 @@ Estudante::Estudante(int studentcode, const string& name) {
     studentcode_=studentcode;
     name_=name;
 }
-int Estudante::getnumUC_() const {
-    return turmasEstudante.size();
-}
+
 int Estudante::getCode() const {
     return studentcode_;
 }
@@ -55,4 +53,7 @@ void Estudante::removerUC(const string& uc) {
         if (uc==t.getUC()) turmasEstudante.erase(itr);
         itr++;
     }
+}
+int Estudante::getnumUC_() const {
+    return turmasEstudante.size();
 }

@@ -1,0 +1,55 @@
+\hypertarget{_gestao_horarios_8h_source}{}\doxysection{Gestao\+Horarios.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by andre on 19-\/10-\/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{7 \textcolor{comment}{}\textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <set>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <limits>}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}Estudante.h"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}Aula.h"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}Pedido.h"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#ifndef AED\_PROJECT\_GESTAOHORARIOS\_H}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define AED\_PROJECT\_GESTAOHORARIOS\_H}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_gestao_horarios}{GestaoHorarios}} \{}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_gestao_horarios_a1c57542281c2de2becb4d08a05b43b07}{GestaoHorarios}}();}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_a6a5b1d226af8e1a5ee64e3f43cb46e6d}{readAulas}}();}
+\DoxyCodeLine{37     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_aa26023d170c6440352d6b6b2fcd7ee04}{readEstudantes}}();}
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_a5c6c27f7d5d90f3e7680c916534c0729}{readCodes}}();}
+\DoxyCodeLine{47     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_a94788bf5d1486d251de2432e1c4996e4}{readTurmas}}();}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_a08b6d9d2683f9f874564f05c83f35695}{addPedido}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_pedido}{Pedido}}\& x);}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_af6a772473bdfc7b6519e8cad5d3be286}{processarPedido}}();}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_a62dad09629dba95d6aac1c610afac62f}{output}}() \textcolor{keyword}{const}; }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_ad746f464e079a52c4eee69a8236c04b5}{outputFails}}()\textcolor{keyword}{const}; }
+\DoxyCodeLine{72     vector<Estudante> \mbox{\hyperlink{class_gestao_horarios_a40e7df0194b88ce2db41aabc4d7755e8}{getEstudantes}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{77     vector<UCTurma> \mbox{\hyperlink{class_gestao_horarios_a364a4e200731ed494a67d36164087293}{getUCTurmas}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{82     vector<string> \mbox{\hyperlink{class_gestao_horarios_a4ee99b9f90aca079cdf1a612bd2f68b2}{getCodes}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{87     vector<string> \mbox{\hyperlink{class_gestao_horarios_ae546054f9e819cfa816f3a4134a59e5f}{getTurmas}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{92     queue<Pedido> \mbox{\hyperlink{class_gestao_horarios_a02dd39b503eddae182af17495bd89205}{getPedidos}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{97     vector<Pedido> \mbox{\hyperlink{class_gestao_horarios_a6f6658c0696bc9f9e1310835b8e9a8b2}{getSuccessos}}()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} sucesso;\};}
+\DoxyCodeLine{102     vector<Pedido> \mbox{\hyperlink{class_gestao_horarios_a232f7c3b0514645932b2a835c4ca3d2e}{getFails}}()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} fail;\};}
+\DoxyCodeLine{103     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_gestao_horarios_a3dc47fe7054d1365e994d94031f4d884}{outputSucessos}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{104 \textcolor{keyword}{private}:}
+\DoxyCodeLine{105     vector<Estudante> estudantes;}
+\DoxyCodeLine{106     vector<UCTurma> horario;}
+\DoxyCodeLine{107     vector<string> codes;}
+\DoxyCodeLine{108     vector<string> turmas;}
+\DoxyCodeLine{109     queue<Pedido> pedidos;}
+\DoxyCodeLine{110     vector<Pedido> sucesso;}
+\DoxyCodeLine{111     vector<Pedido> fail;}
+\DoxyCodeLine{112 \};}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_PROJECT\_GESTAOHORARIOS\_H}}
+
+\end{DoxyCode}

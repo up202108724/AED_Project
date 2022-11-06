@@ -1,0 +1,33 @@
+\hypertarget{_u_c_turma_8h_source}{}\doxysection{UCTurma.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by andre on 19-\/10-\/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{7 \textcolor{comment}{}\textcolor{preprocessor}{\#ifndef AED\_PROJECT\_UCTURMA\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#define AED\_PROJECT\_UCTURMA\_H}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}Aula.h"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_u_c_turma}{UCTurma}} \{}
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{class_u_c_turma}{UCTurma}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& uccode, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& classcode);}
+\DoxyCodeLine{27     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_u_c_turma_a439c53daf4083b147b9490d02eda54d6}{getUC}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{32     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_u_c_turma_abc7687f68308202a2651ed2f252111c3}{getClassCode}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_c_turma_ab9a80dcd1f119ebea462065e3d9a234d}{print}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{43     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_u_c_turma_a92a29fa35f1b3ccf7c16348ecd111815}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_u_c_turma}{UCTurma}}\& turma);}
+\DoxyCodeLine{48     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_u_c_turma_af04e39675726ee526e75aa32bc67487a}{adicionarAula}}( \textcolor{keyword}{const} \mbox{\hyperlink{class_aula}{Aula}}\& aula);}
+\DoxyCodeLine{53     vector<Aula> \mbox{\hyperlink{class_u_c_turma_a1e7e04725b09d7b27a3d03e8d3ad7d3c}{getHorarioUCTurma}}();}
+\DoxyCodeLine{54 \textcolor{keyword}{private}:}
+\DoxyCodeLine{55     vector<Aula> horarioUCTurma;}
+\DoxyCodeLine{56     \textcolor{keywordtype}{string} uccode\_;}
+\DoxyCodeLine{57     \textcolor{keywordtype}{string} classcode\_;}
+\DoxyCodeLine{58 \};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_PROJECT\_UCTURMA\_H}}
+
+\end{DoxyCode}

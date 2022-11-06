@@ -1,0 +1,123 @@
+\hypertarget{class_u_c_turma}{}\doxysection{UCTurma Class Reference}
+\label{class_u_c_turma}\index{UCTurma@{UCTurma}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_c_turma_af1b29bf66fcf5616ec167aeace60098c}{UCTurma}} (const string \&uccode, const string \&classcode)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_u_c_turma_a439c53daf4083b147b9490d02eda54d6}{get\+UC}} () const
+\begin{DoxyCompactList}\small\item\em Obtêm o código da cadeira da \mbox{\hyperlink{class_u_c_turma}{UCTurma}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_u_c_turma_abc7687f68308202a2651ed2f252111c3}{get\+Class\+Code}} () const
+\begin{DoxyCompactList}\small\item\em Obtêm o código da turma da \mbox{\hyperlink{class_u_c_turma}{UCTurma}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_u_c_turma_ab9a80dcd1f119ebea462065e3d9a234d}\label{class_u_c_turma_ab9a80dcd1f119ebea462065e3d9a234d}} 
+void {\bfseries print} () const
+\begin{DoxyCompactList}\small\item\em Imprime o código da uc e o código da uc que lhe é referente. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_u_c_turma_a92a29fa35f1b3ccf7c16348ecd111815}{operator==}} (const \mbox{\hyperlink{class_u_c_turma}{UCTurma}} \&turma)
+\begin{DoxyCompactList}\small\item\em Faz overload do operador \textquotesingle{}==\textquotesingle{} a fim de comparar a igualdade entre duas turmas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_u_c_turma_af04e39675726ee526e75aa32bc67487a}{adicionar\+Aula}} (const \mbox{\hyperlink{class_aula}{Aula}} \&aula)
+\begin{DoxyCompactList}\small\item\em Adiciona uma aula a um horário uma \mbox{\hyperlink{class_u_c_turma}{UCTurma}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_aula}{Aula}} $>$ \mbox{\hyperlink{class_u_c_turma_a1e7e04725b09d7b27a3d03e8d3ad7d3c}{get\+Horario\+UCTurma}} ()
+\begin{DoxyCompactList}\small\item\em Obtêm o conjunto de aulas de uma Turma na sua UC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_c_turma_af1b29bf66fcf5616ec167aeace60098c}\label{class_u_c_turma_af1b29bf66fcf5616ec167aeace60098c}} 
+\index{UCTurma@{UCTurma}!UCTurma@{UCTurma}}
+\index{UCTurma@{UCTurma}!UCTurma@{UCTurma}}
+\doxysubsubsection{\texorpdfstring{UCTurma()}{UCTurma()}}
+{\footnotesize\ttfamily UCTurma\+::\+UCTurma (\begin{DoxyParamCaption}\item[{const string \&}]{uccode,  }\item[{const string \&}]{classcode }\end{DoxyParamCaption})}
+
+
+
+constructor 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uccode} & \\
+\hline
+{\em classcode} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_c_turma_af04e39675726ee526e75aa32bc67487a}\label{class_u_c_turma_af04e39675726ee526e75aa32bc67487a}} 
+\index{UCTurma@{UCTurma}!adicionarAula@{adicionarAula}}
+\index{adicionarAula@{adicionarAula}!UCTurma@{UCTurma}}
+\doxysubsubsection{\texorpdfstring{adicionarAula()}{adicionarAula()}}
+{\footnotesize\ttfamily void UCTurma\+::adicionar\+Aula (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_aula}{Aula}} \&}]{aula }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma aula a um horário uma \mbox{\hyperlink{class_u_c_turma}{UCTurma}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aula} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_u_c_turma_abc7687f68308202a2651ed2f252111c3}\label{class_u_c_turma_abc7687f68308202a2651ed2f252111c3}} 
+\index{UCTurma@{UCTurma}!getClassCode@{getClassCode}}
+\index{getClassCode@{getClassCode}!UCTurma@{UCTurma}}
+\doxysubsubsection{\texorpdfstring{getClassCode()}{getClassCode()}}
+{\footnotesize\ttfamily string UCTurma\+::get\+Class\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtêm o código da turma da \mbox{\hyperlink{class_u_c_turma}{UCTurma}}. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_c_turma_a1e7e04725b09d7b27a3d03e8d3ad7d3c}\label{class_u_c_turma_a1e7e04725b09d7b27a3d03e8d3ad7d3c}} 
+\index{UCTurma@{UCTurma}!getHorarioUCTurma@{getHorarioUCTurma}}
+\index{getHorarioUCTurma@{getHorarioUCTurma}!UCTurma@{UCTurma}}
+\doxysubsubsection{\texorpdfstring{getHorarioUCTurma()}{getHorarioUCTurma()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_aula}{Aula}} $>$ UCTurma\+::get\+Horario\+UCTurma (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtêm o conjunto de aulas de uma Turma na sua UC. 
+
+\begin{DoxyReturn}{Returns}
+horário do objeto \mbox{\hyperlink{class_u_c_turma}{UCTurma}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_c_turma_a439c53daf4083b147b9490d02eda54d6}\label{class_u_c_turma_a439c53daf4083b147b9490d02eda54d6}} 
+\index{UCTurma@{UCTurma}!getUC@{getUC}}
+\index{getUC@{getUC}!UCTurma@{UCTurma}}
+\doxysubsubsection{\texorpdfstring{getUC()}{getUC()}}
+{\footnotesize\ttfamily string UCTurma\+::get\+UC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtêm o código da cadeira da \mbox{\hyperlink{class_u_c_turma}{UCTurma}}. 
+
+\begin{DoxyReturn}{Returns}
+uccode 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_c_turma_a92a29fa35f1b3ccf7c16348ecd111815}\label{class_u_c_turma_a92a29fa35f1b3ccf7c16348ecd111815}} 
+\index{UCTurma@{UCTurma}!operator==@{operator==}}
+\index{operator==@{operator==}!UCTurma@{UCTurma}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool UCTurma\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_c_turma}{UCTurma}} \&}]{turma }\end{DoxyParamCaption})}
+
+
+
+Faz overload do operador \textquotesingle{}==\textquotesingle{} a fim de comparar a igualdade entre duas turmas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turma} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devolve True se se verificar a igualdade de uccode e classcode entre o objeto e o parametro turma 
+
+Devolve False se não se verificar ou a igualdade entre uccodes ou a igualdade entre classcodes 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+UCTurma.\+h\item 
+UCTurma.\+cpp\end{DoxyCompactItemize}
