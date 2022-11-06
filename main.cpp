@@ -42,8 +42,7 @@ bool nomeDescendente(const Estudante& a, const Estudante& b) {return a.getName()
  * @return Verdadeiro se o nome de estudante de a for alfabeticamente inferior que o código estudante de b. Caso contrário, falso.
  */
 bool nomeAscendente(const Estudante& a, const Estudante& b) {return a.getName()<b.getName();}
-bool ucDescendente(const string& a, const string& b) {return a>b;}
-bool ucAscendente(const string& a, const string& b) {return a<b;}
+
 /**
  * @brief recebendo como parâmetros um código de uma disciplina, bem como um código de uma turma, e imprime a lotação da turma da disciplina correspondente ao uccode recebido.
  * @param gestor
